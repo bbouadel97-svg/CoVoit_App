@@ -9,4 +9,4 @@ $titre = 'Requête 7 : Nombre total de salariés';
 $enonce = 'Afficher le nombre total de salariés enregistrés dans la base de données.';
 $colonnes = ['Nombre de salariés'];
 $donnees = $requete->getRequete7();
-require __DIR__ . '/app/Views/requetes/show.php';
+require __DIR__ . '/app/Views/show.php';

@@ -1,4 +1,4 @@
-<?php require __DIR__ . '/../layout/header.php'; ?>
+<?php require __DIR__ . '/header.php'; ?>
 
 <section class="page-heading">
     <h1><?= htmlspecialchars($titre, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') ?></h1>
@@ -32,4 +32,4 @@
     </table>
 </div>
 
-<?php require __DIR__ . '/../layout/footer.php'; ?>
+<?php require __DIR__ . '/footer.php'; ?>

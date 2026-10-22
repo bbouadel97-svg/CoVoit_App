@@ -9,4 +9,4 @@ $titre = 'Requête 5 : Salariés dont le nom commence par M';
 $enonce = 'Afficher le nom, le prénom et l’adresse e-mail des salariés dont le nom commence par la lettre M.';
 $colonnes = ['Nom', 'Prénom', 'Email'];
 $donnees = $requete->getRequete5();
-require __DIR__ . '/app/Views/requetes/show.php';
+require __DIR__ . '/app/Views/show.php';

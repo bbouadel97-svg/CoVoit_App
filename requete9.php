@@ -9,4 +9,4 @@ $titre = 'Requête 9 : Salariés et leurs voitures';
 $enonce = 'Afficher le nom et le prénom des salariés avec la marque, le modèle et l’immatriculation de leur voiture.';
 $colonnes = ['Nom', 'Prénom', 'Marque', 'Modèle', 'Immatriculation'];
 $donnees = $requete->getRequete9();
-require __DIR__ . '/app/Views/requetes/show.php';
+require __DIR__ . '/app/Views/show.php';
