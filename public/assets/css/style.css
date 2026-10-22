@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background: #f1f5f9;
+    color: #172033;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+    background: #172554;
+    box-shadow: 0 2px 8px rgb(15 23 42 / 18%);
+}
+
+.navigation-inner {
+    width: min(1180px, calc(100% - 40px));
+    min-height: 72px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navigation-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 6px;
+}
+
+.navigation-links a {
+    padding: 9px 11px;
+    border-radius: 6px;
+    color: #dbeafe;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navigation-links a:hover,
+.navigation-links a:focus-visible {
+    background: #1e3a8a;
+    color: #fff;
+}
+
+.navigation-links a.active {
+    background: #fff;
+    color: #1e3a8a;
+}
+
+.container {
+    width: min(1060px, calc(100% - 40px));
+    min-height: 300px;
+    margin: 40px auto;
+    padding: clamp(24px, 5vw, 44px);
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 10px 28px rgb(15 23 42 / 8%);
+}
+
+.page-heading {
+    margin-bottom: 28px;
+}
+
+h1 {
+    margin: 0 0 14px;
+    color: #172554;
+    font-size: clamp(1.6rem, 4vw, 2.1rem);
+}
+
+.enonce {
+    margin: 0;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px 16px;
+    border: 1px solid #cbd5e1;
+}
+
+th {
+    background: #1e3a8a;
+    color: #fff;
+    font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+    background: #f1f5f9;
+}
+
+.empty-result {
+    color: #64748b;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .navigation-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+    }
+
+    .navigation-links {
+        justify-content: flex-start;
+    }
+
+    .container {
+        margin: 24px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation-inner,
+    .container {
+        width: calc(100% - 24px);
+    }
+
+    .navigation-links a {
+        padding: 8px;
+        font-size: 0.82rem;
+    }
+
+    .container {
+        padding: 22px 16px;
+    }
+}

@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+/sql/covoiturage.sql
+/docs/captures_sql_semaine1/
+/docs/consignes/
+/Rendu Intermédiaire - Base de Données Covoiturage - Younes SABRI _ Othmane BOUADEL.pdf
